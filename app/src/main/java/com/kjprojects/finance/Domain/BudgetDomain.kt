@@ -11,8 +11,7 @@ data class BudgetDomain(
         parcel.readString().toString(),
         parcel.readDouble(),
         parcel.readDouble()
-    ) {
-    }
+    )
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(title)
